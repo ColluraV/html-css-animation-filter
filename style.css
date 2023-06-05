@@ -14,18 +14,21 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: linear 1s;
+    transition: linear 1s; /* ricordare che il transition si mette qui e non sul comando*/
 }
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    opacity:  1;
+    transition: 1s;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: 1s;
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
@@ -81,3 +84,15 @@
     border-radius: 50%;
     /*--------vorrei mettere anche una rotazione--------*/ 
 }
+.ex-4-square:hover{
+    opacity: 0;
+
+}
+.ex-5-square:hover{
+    width: 90px;
+    height: 90px;
+}
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+} /*--- funziona, riprendere dopo visita----*/
