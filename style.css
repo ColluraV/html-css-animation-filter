@@ -195,9 +195,24 @@
     }
 }
 @keyframes b-rotate {
-    
+    0%{
+        bottom: -20px;
+        right: 10px;
+    }
+    25%{
+        bottom: -20px;
+        right: 190px;
+    }  
     50%{
+        bottom: 50px;
+        right: 190px;
+    }
+    75%{
+        bottom: 50px;
+        right: -40px;
+    }
+    90%{
         bottom: -10px;
-        right: 60%;
+        right: -10px;
     }
 }
