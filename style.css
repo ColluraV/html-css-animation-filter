@@ -62,16 +62,15 @@
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
-    left: 10%;
+    left: 10px;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation: 12-top 4s infinite;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
-    right: 20%;
+    right: 10px;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
@@ -145,6 +144,60 @@
     animation: back-rotation linear 3s ;
 }
 
-@keyframes 12-top{
+.ex-12-top-white{
+    animation: t-side 4s infinite;
+}
+.ex-12-bottom-white{
+    animation: b-side 4s infinite;
+}
 
+
+@keyframes t-side {
+    50%{
+        top: -10px;
+        left: 130px;
+    }
+}
+@keyframes b-side {
+    50%{
+        bottom: -10px;
+        right: 130px;
+    }
+}
+
+.ex-13-top-white{
+    animation: t-rotate 4s infinite linear;
+}
+.ex-13-bottom-white{
+    animation: b-rotate 4s infinite linear;
+}
+
+@keyframes t-rotate {
+    0%{
+        top: -20px;
+        left: 10px;
+    }
+    25%{
+        top: -20px;
+        left: 190px;
+    }  
+    50%{
+        top: 50px;
+        left: 190px;
+    }
+    75%{
+        top: 50px;
+        left: -40px;
+    }
+    90%{
+        top: -10px;
+        left: -10px;
+    }
+}
+@keyframes b-rotate {
+    
+    50%{
+        bottom: -10px;
+        right: 60%;
+    }
 }
